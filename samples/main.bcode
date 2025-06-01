@@ -1,0 +1,40 @@
+PUSH_STR "Hello"
+PRINT
+PUSH 10
+STORE i
+PUSH 5
+PUSH 8
+PUSH 10
+MUL
+ADD
+PUSH 1
+OR
+STORE b
+LOAD b
+PRINT
+LBL while_start_0
+LOAD i
+PUSH 0
+GT
+LOAD i
+PUSH 0
+EQ
+OR
+JZ while_end_0
+LOAD i
+PRINT
+LOAD i
+PUSH 1
+SUB
+STORE i
+JMP while_start_0
+LBL while_end_0
+LOAD i
+PUSH 0
+GT
+JZ endif_1
+PUSH_STR "No"
+PRINT
+LBL endif_1
+PUSH 0
+RET

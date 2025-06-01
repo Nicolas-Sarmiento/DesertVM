@@ -1,0 +1,21 @@
+PUSH 20
+STORE number
+PUSH 0
+STORE counter
+LBL while_start_0
+LOAD number
+JZ while_end_0
+LOAD number
+PUSH 2
+DIV
+STORE number
+LOAD counter
+PUSH 1
+ADD
+STORE counter
+JMP while_start_0
+LBL while_end_0
+LOAD counter
+PRINT
+PUSH 0
+RET

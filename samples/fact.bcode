@@ -1,0 +1,23 @@
+PUSH 1
+STORE res
+PUSH 1
+STORE counter
+LBL while_start_0
+PUSH 11
+LOAD counter
+GT
+JZ while_end_0
+LOAD res
+LOAD counter
+MUL
+STORE res
+LOAD counter
+PUSH 1
+ADD
+STORE counter
+JMP while_start_0
+LBL while_end_0
+LOAD res
+PRINT
+PUSH 0
+RET

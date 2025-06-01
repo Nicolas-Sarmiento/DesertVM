@@ -1,0 +1,33 @@
+PUSH 1
+STORE fib1
+PUSH 1
+STORE fib2
+PUSH 0
+STORE counter
+LBL while_start_0
+PUSH 10
+LOAD counter
+GT
+LOAD counter
+PUSH 10
+EQ
+OR
+JZ while_end_0
+LOAD fib1
+PRINT
+LOAD fib1
+STORE aux
+LOAD fib1
+LOAD fib2
+ADD
+STORE fib1
+LOAD aux
+STORE fib2
+LOAD counter
+PUSH 1
+ADD
+STORE counter
+JMP while_start_0
+LBL while_end_0
+PUSH 0
+RET
