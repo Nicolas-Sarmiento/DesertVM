@@ -45,7 +45,7 @@ char* strip_quotes(const char* input) {
     size_t len = strlen(input);
     if (len < 2) return NULL;
 
-    char* result = malloc(len - 1);  // len-2 (sin comillas) + 1 para '\0'
+    char* result = malloc(len - 1);
     strncpy(result, input + 1, len - 2);
     result[len - 2] = '\0';
     return result;

@@ -1,0 +1,17 @@
+PUSH 0
+STORE i
+LBL while_start_0
+PUSH 11
+LOAD i
+GT
+JZ while_end_0
+LOAD i
+PRINT
+LOAD i
+PUSH 1
+ADD
+STORE i
+JMP while_start_0
+LBL while_end_0
+PUSH 0
+RET
