@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "var_table/varTable.h"
 
 Value* get_variable ( VarTable* table, const char* name ){

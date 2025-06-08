@@ -2,6 +2,7 @@
 #define STACK_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "Values/values.h"
 
 #define STACK_SIZE 1024
